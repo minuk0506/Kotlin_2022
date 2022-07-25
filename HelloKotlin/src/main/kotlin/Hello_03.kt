@@ -4,12 +4,12 @@ fun add(num1: Int, num2: Int): Int{
     return num1 + num2
 }
 fun main() {
-    var result = add(num1:100, num2:200)
+    var result = add(100, 200)
     println(result)
 
     var redius = 30
     println("반지름 : $redius")
-    println("원둘레 : ${radius * 2 * Math.PI}")
+    println("원둘레 : (${radius * 2 * Math.PI}")
     println("원의 넓이 : ${redius * redius * Math.PI}")
 
     // 문자열을 배열처럼 부분 문자 추출 가능
