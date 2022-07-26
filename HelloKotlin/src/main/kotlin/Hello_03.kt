@@ -7,10 +7,10 @@ fun main() {
     var result = add(100, 200)
     println(result)
 
-    var redius = 30
-    println("반지름 : $redius")
-    println("원둘레 : (${radius * 2 * Math.PI}")
-    println("원의 넓이 : ${redius * redius * Math.PI}")
+    var radius = 30
+    println("반지름 : $radius")
+    println("원둘레 : ${radius * 2 * Math.PI}")
+    println("원의 넓이 : ${radius * radius * Math.PI}")
 
     // 문자열을 배열처럼 부분 문자 추출 가능
     var nation = "Korea"
@@ -44,20 +44,20 @@ fun main() {
     // 5개의 요소를 갖는 배열을 선언하고
     // i = 0 ~ 4, 일때 i * 10을 각각 계산하여
     // 요소에 저장하기
-    var arr2 = Array<Int>(size:5, {i ->i * 10})
+    var arr2 = Array<Int>(5, {i ->i * 10})
     for(a in arr2){
         println(a)
     }
     // 정수형 배열 5개를 선언하고
     // 각각의 요소에 i+10, 1+10, 2+10, 3+10, 4+10 저장
-    var arr3 = IntArray(size:5, {i->i + 10})
+    var arr3 = IntArray(5, {i->i + 10})
     // 10 개의 요소를 갖는 정수형 배열 선언
-    var arr4 = IntArray(size:10)
+    var arr4 = IntArray(10)
 
     // java 의 List<String> type 의 데이터
     // 데이터를 변경할 수 있는 List
     var mutableList = mutableListOf("Korea","대한민국")
 
     // 데이터를 변경할 수 없는 List
-    var immutalbeList = ListOf<String>("Korea","대한민국")
+    var immutalbeList = listOf<String>("Korea","대한민국")
 }
